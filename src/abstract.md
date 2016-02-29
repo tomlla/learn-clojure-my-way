@@ -9,6 +9,8 @@
 ## 何が素敵なの
 
 - jvmの資産(javaライブラリやjvmの性能)が活かせる  
+- REPL Driven
+- 開発サポート機構とtext-editor/IDEがわかれている
 - **lisp!**
 
 ## clojureつかっている会社とかある?
