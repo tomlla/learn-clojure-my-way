@@ -43,16 +43,20 @@
 ## data structures
 ```
 ; list 
-(a b c d)
+'(a b c d)
 
 ; map(array-map) 
-{:key "value", }
+{:age 22 :birth-day "1993.7.30"}
 
 ; vector 
 [1 2 3 4]
 
 ; set 
 #{a b c}
+
+; listの中のmap
+[ {:age 22 :birth-day "1993.7.30"} 
+  {:age 23 :birth-day "1992.1.30"}]
 ```
 
 ## 文字操作
