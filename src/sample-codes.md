@@ -41,7 +41,7 @@
 ```
 
 ## data structures
-```
+```clj
 ; list 
 '(a b c d)
 
