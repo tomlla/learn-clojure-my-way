@@ -9,7 +9,9 @@
 ## ネームスペース内ローカル変数
 > 他に良い呼び方があるかもしれません
 
+```clj
 (def name "tomlla")
+```
 
 ## 関数定義
 ```clj
@@ -22,7 +24,10 @@
 (helloworld) ; "Hello World!"
 ; ちなみに "カンマ;" はコメント
 (greet "@tomlla") ; "Hello! @tomlla"
-(def isGranditProductCode? (fn [^String code] ))
+
+(def isGranditProductCode? (fn [^String code] (= (count code) 10)))
+(isGranditProductCode? "x") ; false
+(isGranditProductCode? "1234567890") ; true 
 ```
 
 ## 条件分岐
@@ -35,16 +40,39 @@
         (= (mod n 5) 0) "buzz"))
 ```
 
-## 例外を投げる
-```clj
-(throw (Exception. "throw from leiningen repl"))
+## data structures
 ```
+; list 
+(a b c d)
 
+; map(array-map) 
+{:key "value", }
+
+; vector 
+[1 2 3 4]
+
+; set 
+#{a b c}
+```
 
 ## 文字操作
 ```clj
 (str ":" "emacs") 
 (format "name: %s age: %d" "tomlla" 24) ; "name: tomlla age: 23"
+```
+
+## コレクション操作 & thread macro
+```clj
+(filter even? [2 3 4])
+; > (2 4)
+
+(map #(* % %) (filter even? [2 3 4]))
+; > (4 16)
+
+(->> [2 3 4]
+     (filter even?)
+     (map #(* % %)))
+; > (4 16)
 ```
 
 # javaを呼びだして使う
@@ -65,6 +93,11 @@
 
 ; メソッド呼び出し省略記法版
 (. (java.uti.Date.) toString)
+```
+
+## 例外を投げる
+```clj
+(throw (Exception. "throw from leiningen repl"))
 ```
 
 
