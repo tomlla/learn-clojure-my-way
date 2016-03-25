@@ -25,7 +25,7 @@ http://clojuredocs.org/
 ### Clojure の日本語ガイド
 http://ayato-p.github.io/clojure-beginner/  
 
-@ayato_p (github) による日本語で書かれたclojureのチュートリアル的ドキュメント
+@ayato_p (github) さんによる日本語で書かれたclojureのチュートリアル的ドキュメント
 
 
 ## social account
